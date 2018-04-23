@@ -1,0 +1,11 @@
+<!--
+ - Created by papagni on 23/04/2018.
+ - Note: pagina che avvia il flusso di autenticazione su Facebook
+ -->
+
+<apex:page id="SocialRegistrationStart" showHeader="false" sideBar="false" controller="SocialRegistrationCtn">
+    <h2>Avvia processo</h2>
+    <apex:form id="theForm">
+        <apex:commandButton value="Facebook" action="{!goFacebook}"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,13 @@
+<!--
+ - Created by papagni on 23/04/2018.
+ -->
+
+<apex:page id="SocialRegistration" showHeader="false" sideBar="false" controller="SocialRegistrationCtn" action="{!onload}">
+    <h2>Mappa params</h2>
+    <apex:repeat value="{!mapParams}" var="dirKey">
+        <apex:outputText value="{!dirKey}" /> -- <apex:outputText value="{!mapParams[dirKey]}" /><br/>
+    </apex:repeat>
+    <br/>
+    <p>Token:{!oauthToken}</p>
+    <p>FB id:{!identifier}</p>
+</apex:page>

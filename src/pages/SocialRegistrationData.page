@@ -1,0 +1,17 @@
+<!--
+ - Created by papagni on 23/04/2018.
+ -->
+
+<apex:page id="SocialRegistrationData" showHeader="false" sideBar="false"  controller="SocialRegistrationDataCnt" action="{!onload}">
+
+    <p>Mappa params</p>
+    <apex:repeat value="{!mapParams}" var="dirKey">
+        <apex:outputText value="{!dirKey}" /> -- <apex:outputText value="{!mapParams[dirKey]}" /><br/>
+    </apex:repeat>
+    <br/>
+    <br/>
+    <p>msgText: {!msgText}</p>
+    <br/>
+    <br/>
+    <p>Remote user identifier: {!identifier}</p>
+</apex:page>
