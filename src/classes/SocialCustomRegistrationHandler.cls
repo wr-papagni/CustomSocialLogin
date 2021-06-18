@@ -3,6 +3,10 @@
 **/
 global class SocialCustomRegistrationHandler implements Auth.RegistrationHandler{
 
+	private void myNewMethod(){
+
+	}
+
 	private static final String ORG_SUFFIX = '.sso.badge.org';
 	private static final String DEFAULT_ACCOUNTNAME = 'Canarie';
 	private static final String EXTERNAL_USER_PROFILE = 'CUST-Customer Portal Manager Standard';
